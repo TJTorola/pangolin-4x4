@@ -23,7 +23,7 @@ const plugins = [
   }),
 ];
 
-postcssWatch({
+module.exports = () => postcssWatch({
   input: "css",
   output: "dist",
   plugins,

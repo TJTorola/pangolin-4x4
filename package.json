@@ -4,8 +4,7 @@
   "description": "",
   "main": "",
   "scripts": {
-    "build-css": "node css/build.js",
-    "start": "elm-live src/Main.elm --output=dist/index.js --dir=dist --open"
+    "start": "node build.js"
   },
   "author": "",
   "license": "ISC",
