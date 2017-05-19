@@ -1,3 +1,7 @@
 elm-stuff
+
 node_modules
-dist/*
+node-debug.log
+
+dist/style.css
+dist/main.js

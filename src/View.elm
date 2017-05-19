@@ -9,4 +9,4 @@ import Html.Events exposing (..)
 
 view : Model -> Html Action
 view model =
-    div [] [ text "Penguin 2x4" ]
+    div [] [ text "Penguin 2xxx" ]

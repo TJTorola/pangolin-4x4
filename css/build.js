@@ -8,7 +8,7 @@ const customMedia = require('postcss-custom-media');
 const calc = require('postcss-calc');
 const cssnano = require('cssnano');
 
-const indexCss = fs.readFileSync('index.css', 'utf8');
+const indexCss = fs.readFileSync('css/index.css', 'utf8');
 
 postcss([
   atImport(),
@@ -22,6 +22,6 @@ postcss([
     },
   }),
 ]).process(indexCss, {
-  from: 'index.css',
-  to: '../dist/style.css',
-}).then(result => fs.writeFile('../dist/style.css', result.css));
+  from: 'css/index.css',
+  to: 'dist/style.css',
+}).then(result => fs.writeFile('dist/style.css', result.css));
