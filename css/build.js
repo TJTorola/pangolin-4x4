@@ -1,5 +1,5 @@
 const fs = require('fs');
-const postcss = require('postcss');
+const postcssWatch = require('postcss-watch');
 
 const atImport = require('postcss-import');
 const autoPrefix = require('autoprefixer');
@@ -10,7 +10,7 @@ const cssnano = require('cssnano');
 
 const indexCss = fs.readFileSync('css/index.css', 'utf8');
 
-postcss([
+const plugins = [
   atImport(),
   autoPrefix(),
   customProperties(),
@@ -21,7 +21,10 @@ postcss([
       removeAll: true,
     },
   }),
-]).process(indexCss, {
-  from: 'css/index.css',
-  to: 'dist/style.css',
-}).then(result => fs.writeFile('dist/style.css', result.css));
+];
+
+postcssWatch({
+  input: "css",
+  output: "dist",
+  plugins,
+});

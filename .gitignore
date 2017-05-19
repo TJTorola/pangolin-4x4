@@ -3,5 +3,5 @@ elm-stuff
 node_modules
 node-debug.log
 
-dist/style.css
-dist/main.js
+dist/index.css
+dist/index.js
