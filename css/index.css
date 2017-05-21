@@ -1,5 +1,14 @@
-html,
-body,
-#Root {
-  height: 100%;
+@import './app.css';
+
+:root {
+  --white: #F7f7f7;
+  --light-gray: #BEBEBE;
+  --gray: #404040;
+  --dark-gray: #252525;
+
+  --highlight: #CE3229;
+  --green: #248200;
+  --active: #DD8131;
+
+  --content-width: 900px;
 }
