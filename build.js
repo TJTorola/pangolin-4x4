@@ -34,7 +34,7 @@ postcssWatch({
 const BUILD_ELM_EXEC = './node_modules/.bin/elm-live';
 const BUILD_ELM_ARGS = [
   'src/Main.elm',
-  '--output=dist/index.js',
+  '--output=dist/app.js',
   '--dir=dist',
   '--open',
 ];

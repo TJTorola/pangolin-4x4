@@ -2,7 +2,7 @@ html,
 body,
 #Root,
 #App {
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
@@ -16,39 +16,55 @@ body {
   align-items: center;
 }
 
-#Header {
+#Loader {
   width: 100%;
-  height: 145px;
+  min-height: 5px;
+  max-height: 5px;
+  position: sticky;
+  top: -2px;
+  background: var(--gray);
+}
+
+#Loader-bar {
+  height: 5px;
+  background: var(--highlight);
+  transition: width 500ms ease-in-out;
+}
+
+header {
+  width: 100%;
+  max-height: 145px;
+  min-height: 145px;
   background: var(--gray);
 
   display: flex;
   flex-direction: column;
 }
 
-#Header-highlightBar {
-  height: 5px;
-  background: var(--highlight);
-}
-
 #Header-bodyWrapper {
   flex-grow: 1;
 }
 
-#Header-navWrapper {
-  height: 35px;
+nav {
+  position: sticky;
+  top: 3px;
+  width: 100%;
+  min-height: 35px;
+  max-height: 35px;
   background: var(--dark-gray);
 }
 
-#Page {
+main {
   flex-grow: 1;
   background: var(--light-gray);
   width: var(--content-width);
   background: var(--white);
 }
 
-#Footer {
+footer {
   width: var(--content-width);
-  height: 65px;
+  max-height: 65px;
+  min-height: 65px;
   background: var(--gray);
 }
 
