@@ -1,12 +1,12 @@
 {
   "name": "p4x4",
   "version": "0.0.0",
-  "description": "",
+  "description": "Storefront Website for Pangolin 4x4",
   "main": "",
   "scripts": {
     "start": "node build.js"
   },
-  "author": "",
+  "author": "Tyler Torola <Tyler@TJT.Codes>",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^7.1.1",
