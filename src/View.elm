@@ -1,5 +1,6 @@
 module View exposing (..)
 
+import View.Icon exposing (icon)
 import Model exposing (Model)
 import Actions exposing (Action)
 import Html exposing (..)
