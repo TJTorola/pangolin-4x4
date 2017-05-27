@@ -65,6 +65,8 @@ viewPage model =
         [ div [ id "Main-left" ]
             [ span [ id "Main-social" ]
                 [ icon "facebook" "30px"
+                , icon "instagram" "30px"
+                , icon "rss" "30px"
                 ]
             ]
         , div [ id "Main-center" ] [ text content ]

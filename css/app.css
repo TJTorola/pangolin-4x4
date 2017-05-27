@@ -71,9 +71,17 @@ main {
 
 #Main-social {
   position: sticky;
-  margin: 5px;
-  top: 42px;
-  height: 60px; /* TODO: his is 100% otherwise for some reason */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 8px;
+  top: 45px;
+  height: 100px;
+}
+
+#Main-social svg:hover {
+  fill: var(--active);
+  cursor: pointer;
 }
 
 #Main-center {
