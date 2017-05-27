@@ -21,7 +21,7 @@ view model =
         [ viewLoader model
         , viewHeader model
         , viewNav model
-        , main_ [] [ text content ]
+        , viewPage model
         , viewFooter model
         ]
 
@@ -56,6 +56,19 @@ viewNav model =
             [ div [ id "Nav-links" ] []
             , div [ id "Nav-search" ] []
             ]
+        ]
+
+
+viewPage : Model -> Html Action
+viewPage model =
+    main_ []
+        [ div [ id "Main-left" ]
+            [ span [ id "Main-social" ]
+                [ icon "facebook" "30px"
+                ]
+            ]
+        , div [ id "Main-center" ] [ text content ]
+        , div [ id "Main-right" ] []
         ]
 
 

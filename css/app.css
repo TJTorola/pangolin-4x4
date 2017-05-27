@@ -1,6 +1,5 @@
 html,
 body,
-#Root,
 #App {
   min-height: 100%;
 }
@@ -56,9 +55,30 @@ nav {
 
 main {
   flex-grow: 1;
-  background: var(--light-gray);
+  width: 100%;
+  display: flex;
+}
+
+#Main-left, #Main-right {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+#Main-left {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#Main-social {
+  position: sticky;
+  margin: 5px;
+  top: 42px;
+  height: 60px; /* TODO: his is 100% otherwise for some reason */
+}
+
+#Main-center {
+  background: white;
   width: var(--content-width);
-  background: var(--white);
 }
 
 footer {
